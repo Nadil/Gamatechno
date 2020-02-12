@@ -1,0 +1,44 @@
+@import 'mixins';
+@import 'variables';
+
+@mixin pageTitle {
+  @include setTypography(36px, bold, 36px, 0.02rem);
+}
+
+@mixin cardTitle {
+  @include setTypography(20px, 600, 24px, 0.04rem);
+}
+
+@mixin subtitle {
+  @include setTypography(20px, normal, 20px, 0.04rem);
+  text-transform: uppercase;
+}
+
+@mixin inputPlaceholder {
+  @include setTypography(16px, normal, 20px, 0.04rem);
+  color: $grey-4;
+}
+
+@mixin inputLabel {
+  @include setTypography(16px, 500, 20px, 0.08rem);
+  color: $grey-2;
+}
+
+@mixin buttonLabel {
+  @include setTypography(16px, normal, 16px, 0.04rem);
+  text-transform: uppercase;
+}
+
+@mixin paragraph {
+  @include setTypography(16px, 300, 24px, 0.04rem);
+}
+
+@mixin link {
+  @include setTypography(12px, normal, 16px, 0.04rem);
+  color: $yellow-1;
+}
+
+@mixin statusLabel {
+  @include setTypography(12px, 300, 14px, 0.04rem);
+  text-transform: uppercase;
+}
